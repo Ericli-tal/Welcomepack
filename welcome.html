@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settling In, Protected | TAL Welcome Pack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* OFFICIAL BRAND PALETTE REFINEMENTS */
+        :root {
+            --tal-green: #80C342;
+            --tal-slate: #303E46;
+            --tal-beige: #EFEFD2;
+            --tal-teal: #2FB3B6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .bg-tal-green { background-color: var(--tal-green); }
+        .text-tal-green { color: var(--tal-green); }
+        .border-tal-green { border-color: var(--tal-green); }
+
+        .bg-tal-blue { background-color: var(--tal-slate); }
+        .text-tal-blue { color: var(--tal-slate); }
+        .border-tal-blue { border-color: var(--tal-slate); }
+
+        .bg-tal-beige { background-color: var(--tal-beige); }
+
+        .story-card-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .story-card-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .video-overlay {
+            background: linear-gradient(0deg, rgba(48, 62, 70, 0.9) 0%, transparent 50%);
+        }
+
+        .btn-primary {
+            background-color: var(--tal-slate);
+            color: white;
+            transition: all 0.2s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(48, 62, 70, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header & Language Switcher -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-tal-green rounded-xl flex items-center justify-center text-white font-black text-2xl tracking-tighter shadow-sm">TAL</div>
+                    <span class="text-xl font-bold tracking-tight text-tal-blue hidden sm:block">SIP <span class="text-tal-green">Welcome Pack</span></span>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <div class="relative group">
+                        <button id="langButton" class="flex items-center gap-2 px-3 py-2 border border-slate-200 rounded-full text-sm font-medium hover:bg-slate-50 transition-colors">
+                            <i data-lucide="languages" class="w-4 h-4 text-tal-green"></i>
+                            <span>English</span>
+                            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                        </button>
+                        <div class="hidden group-hover:block absolute right-0 mt-2 w-48 bg-white border border-slate-200 rounded-xl shadow-xl overflow-hidden py-1 z-50">
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-tal-green hover:text-white transition-colors">Mandarin (简体中文)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-tal-green hover:text-white transition-colors">Arabic (العربية)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-tal-green hover:text-white transition-colors">Vietnamese (Tiếng Việt)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-tal-green hover:text-white transition-colors">Cantonese (廣東話)</a>
+                            <a href="#" class="block px-4 py-2 text-sm hover:bg-tal-green hover:text-white transition-colors">Punjabi (ਪੰਜਾਬੀ)</a>
+                        </div>
+                    </div>
+                    <a href="https://coverbuilder.tal.com.au/#/" target="_blank" class="bg-tal-blue text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-opacity-90 transition-all shadow-md">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Homepage / Hero Banner -->
+        <section class="relative bg-tal-green text-tal-blue overflow-hidden">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-white opacity-20 skew-x-12 translate-x-10"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-tal-blue opacity-5 rounded-full -translate-x-10 translate-y-10"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="inline-block bg-tal-blue text-white px-5 py-2 rounded-full font-bold text-xs uppercase tracking-widest mb-8 shadow-sm">
+                            Welcome Pack: Settling In, Protected
+                        </div>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 text-tal-blue">
+                            Protecting what you've built in Australia.
+                        </h1>
+                        <p class="text-xl text-tal-blue/80 mb-12 leading-relaxed max-w-xl font-medium">
+                            You've moved across the world, built a business, and created a home. We're here to make sure your family's future is as stable as your ambition.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-5">
+                            <a href="#understanding" class="btn-primary px-10 py-5 rounded-2xl font-black text-lg text-center shadow-xl">Explore the Pack</a>
+                            <a href="#" download class="flex items-center justify-center gap-2 px-10 py-5 bg-white border border-tal-blue/10 rounded-2xl font-black text-tal-blue hover:bg-slate-50 transition-colors shadow-sm text-lg">
+                                <i data-lucide="file-down" class="w-6 h-6"></i>
+                                Welcome Brochure
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex justify-center relative">
+                        <div class="bg-tal-beige p-3 rounded-[2.5rem] shadow-2xl border-4 border-white rotate-2 hover:rotate-0 transition-all duration-700">
+                             <div class="bg-white w-[340px] h-[460px] rounded-[2rem] flex flex-col items-center justify-center p-10 shadow-inner">
+                                <div class="w-24 h-24 bg-tal-green rounded-full flex items-center justify-center mb-8 shadow-sm">
+                                    <i data-lucide="shield-check" class="w-12 h-12 text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-black mb-4 text-center text-tal-blue">Guide to Life Insurance</h3>
+                                <p class="text-base text-slate-500 text-center mb-8 font-medium">A simple summary for new Australian residents and business owners.</p>
+                                <div class="w-full h-2.5 bg-slate-100 rounded-full mb-3"></div>
+                                <div class="w-3/4 h-2.5 bg-slate-100 rounded-full"></div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Understanding Protection in Australia -->
+        <section id="understanding" class="py-28 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <h2 class="text-4xl font-black mb-6 text-tal-blue">Understanding Protection in Australia</h2>
+                    <p class="text-slate-600 text-xl italic font-medium">In Australia, <strong>Life Insurance</strong> works differently depending on how you work. Understanding this gap is the first step to security.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="p-10 rounded-[2rem] border border-slate-200 bg-slate-50">
+                        <div class="flex items-center gap-3 mb-8 text-slate-400 font-black uppercase text-xs tracking-widest">
+                            <i data-lucide="briefcase" class="w-4 h-4"></i>
+                            <span>Scenario A: Salaried Employee</span>
+                        </div>
+                        <h3 class="text-3xl font-black mb-6 text-tal-blue">"The Safety Net"</h3>
+                        <p class="text-slate-600 mb-8 text-lg leading-relaxed font-medium">Most standard office jobs include <strong>Default Cover</strong>. While this is a basic level of cover, you can optionally enhance this protection by buying <strong>Life Insurance</strong> outside of superannuation.</p>
+                        <div class="flex items-center gap-2 text-tal-green font-black">
+                            <i data-lucide="info" class="w-6 h-6"></i>
+                            <span>Basic cover usually automatic</span>
+                        </div>
+                    </div>
+                    <div class="p-10 rounded-[2rem] border-4 border-tal-green bg-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-tal-green text-white px-6 py-2 font-black text-xs uppercase rounded-bl-2xl">Important for you</div>
+                        <div class="flex items-center gap-3 mb-8 text-tal-green font-black uppercase text-xs tracking-widest">
+                            <i data-lucide="store" class="w-4 h-4"></i>
+                            <span>Scenario B: Small Business Owner</span>
+                        </div>
+                        <h3 class="text-3xl font-black mb-6 text-tal-blue">"The Responsibility Gap"</h3>
+                        <p class="text-slate-600 mb-8 text-lg leading-relaxed font-medium">If you work for yourself (like <strong>Mei Zhao</strong> at her salon), you are <strong>not</strong> automatically covered. You need to actively choose <strong>Life Insurance</strong> to protect your income.</p>
+                        <div class="flex items-center gap-3 text-red-500 font-black">
+                            <i data-lucide="alert-circle" class="w-6 h-6"></i>
+                            <span>Requires active choice to protect</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Connecting with Communities (Podcast) -->
+        <section class="py-28 bg-tal-blue text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-20">
+                    <div class="max-w-2xl">
+                        <h2 class="text-4xl font-black mb-6">Connecting with Communities</h2>
+                        <p class="text-slate-300 text-xl leading-relaxed font-medium">Personalized experiences for different migrant groups and small business owners. Listen to <strong>The Finance Guide</strong> podcast series.</p>
+                    </div>
+                    <div class="flex gap-4">
+                        <button class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:bg-white/10 transition-all"><i data-lucide="chevron-left"></i></button>
+                        <button class="w-14 h-14 rounded-2xl bg-tal-green flex items-center justify-center text-tal-blue hover:scale-105 transition-all"><i data-lucide="chevron-right" class="font-bold"></i></button>
+                    </div>
+                </div>
+
+                <div class="flex gap-8 overflow-x-auto story-card-scroll pb-10 snap-x">
+                    <div class="flex-shrink-0 w-[300px] h-[520px] bg-slate-900 rounded-[2.5rem] relative overflow-hidden snap-center border-4 border-white/10 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=300&h=520" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Podcast Recording">
+                        <div class="video-overlay absolute inset-0 flex flex-col justify-end p-8">
+                            <span class="bg-tal-green text-tal-blue px-4 py-1.5 rounded-full text-xs font-black uppercase w-fit mb-4">New Podcast</span>
+                            <h4 class="font-black text-2xl mb-2 italic uppercase tracking-tighter text-tal-green">The Finance Guide</h4>
+                            <p class="font-bold text-base mb-4 opacity-90 leading-tight">"Ep 1: Why I stopped ignoring those Life Insurance letters..."</p>
+                            <div class="flex items-center gap-2 text-sm font-bold text-white/70">
+                                <i data-lucide="mic" class="w-5 h-5 text-tal-green"></i>
+                                <span>12 min listen</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-shrink-0 w-[300px] h-[520px] bg-slate-900 rounded-[2.5rem] relative overflow-hidden snap-center border-4 border-white/10 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=300&h=520" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Business discussion">
+                        <div class="video-overlay absolute inset-0 flex flex-col justify-end p-8 text-white">
+                            <span class="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-black uppercase w-fit mb-4 border border-white/20">Reel</span>
+                            <p class="font-black text-xl mb-4 leading-tight">What happens to business loans if you get sick?</p>
+                            <div class="flex items-center gap-2 text-sm font-bold text-tal-green">
+                                <i data-lucide="play-circle" class="w-6 h-6"></i>
+                                <span>1.2k views</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-[300px] h-[520px] bg-slate-900 rounded-[2.5rem] relative overflow-hidden snap-center border-4 border-white/10 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1454165833767-027ffea9e778?auto=format&fit=crop&q=80&w=300&h=520" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" alt="Claim payout">
+                        <div class="video-overlay absolute inset-0 flex flex-col justify-end p-8 text-white">
+                            <span class="bg-tal-green text-tal-blue px-4 py-1.5 rounded-full text-xs font-black uppercase w-fit mb-4">Community</span>
+                            <p class="font-black text-xl mb-4 leading-tight">How claims work: Real payouts for real migrant families.</p>
+                            <div class="flex items-center gap-2 text-sm font-bold text-tal-green">
+                                <i data-lucide="play-circle" class="w-6 h-6"></i>
+                                <span>5.1k views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Case Study - Mei's Journey (REFINED PERSONA) -->
+        <section class="py-28 bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-tal-beige rounded-[3rem] overflow-hidden border-4 border-white shadow-2xl">
+                    <div class="flex flex-col lg:flex-row">
+                        <!-- Left: Visual & Profile -->
+                        <div class="lg:w-2/5 relative h-[500px] lg:h-auto overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600&h=800" class="absolute inset-0 w-full h-full object-cover" alt="Mei Zhao Profile">
+                            <div class="absolute bottom-10 left-10 right-10 bg-tal-blue p-8 rounded-[2rem] text-white shadow-2xl border-l-8 border-tal-green">
+                                <p class="italic text-lg mb-6 leading-relaxed font-medium">"I used to think, 'Why plan for death when I want to focus on success?' TAL showed me that Life Insurance is actually about securing the success I've already built."</p>
+                                <div class="flex items-center gap-4">
+                                    <div class="w-1.5 h-10 bg-tal-green"></div>
+                                    <div>
+                                        <div class="font-black text-2xl tracking-tighter text-tal-green uppercase">Mei Zhao, 34</div>
+                                        <div class="text-sm font-bold opacity-70 uppercase tracking-widest">Salon Owner, Sydney (Hurstville)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Right: Detailed Persona Story -->
+                        <div class="lg:w-3/5 p-12 lg:p-20 bg-white/40 backdrop-blur-sm">
+                            <h2 class="text-4xl font-black mb-10 text-tal-blue">Case Study: A First Glance</h2>
+                            
+                            <!-- Profile Bio -->
+                            <div class="grid sm:grid-cols-2 gap-8 mb-12">
+                                <div class="space-y-4">
+                                    <h4 class="text-xs font-black uppercase tracking-widest text-tal-green">The Background</h4>
+                                    <p class="text-slate-600 text-sm font-medium leading-relaxed">Migrated from China 6 years ago. Married with one young child. Only had basic health/car cover—viewed <strong>Life Insurance</strong> as a luxury for "high earners."</p>
+                                </div>
+                                <div class="space-y-4">
+                                    <h4 class="text-xs font-black uppercase tracking-widest text-tal-green">The Goals</h4>
+                                    <ul class="text-slate-600 text-sm font-medium space-y-2">
+                                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-tal-green flex-shrink-0"></i> Protect child from financial hardship</li>
+                                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-tal-green flex-shrink-0"></i> Avoid funeral costs burdening family</li>
+                                        <li class="flex gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-tal-green flex-shrink-0"></i> Build stability in a new country</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Barriers vs Realization -->
+                            <div class="bg-white rounded-3xl p-8 border border-slate-100 shadow-sm mb-12">
+                                <div class="flex flex-col md:flex-row gap-8">
+                                    <div class="flex-1">
+                                        <h4 class="text-sm font-black text-red-500 uppercase mb-4 tracking-tighter">Former Barriers</h4>
+                                        <p class="text-xs text-slate-500 leading-relaxed italic">"Overwhelmed by jargon (TPD, PDS). Afraid of being 'tricked' or paying for nothing. Preferred family support over a big company."</p>
+                                    </div>
+                                    <div class="w-px bg-slate-100 hidden md:block"></div>
+                                    <div class="flex-1">
+                                        <h4 class="text-sm font-black text-tal-green uppercase mb-4 tracking-tighter">The Turning Point</h4>
+                                        <p class="text-slate-600 text-sm font-bold leading-relaxed">Mei saw a TAL advisor at a local multicultural event. She heard stories of real migrant families whose business loans were covered during hardship. She realized <strong>Life Insurance</strong> is a foundation, not an investment.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resonating Message -->
+                            <div class="border-l-4 border-tal-green pl-6 py-2">
+                                <p class="text-2xl font-black text-tal-blue tracking-tighter">"Your family shouldn't have to start over if something happens to you."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Building Trust through Results -->
+        <section class="py-28 bg-white border-t border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h2 class="text-4xl font-black mb-10 text-tal-blue">Building Trust through Results</h2>
+                        <div class="space-y-12">
+                            <div class="flex gap-8">
+                                <div class="flex-shrink-0 w-20 h-20 bg-tal-green rounded-3xl flex items-center justify-center text-white shadow-lg">
+                                    <i data-lucide="bar-chart-3" class="w-10 h-10"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-2xl font-black mb-3 text-tal-blue">Claim Transparency</h4>
+                                    <p class="text-slate-600 leading-relaxed italic text-lg font-medium">Last year, TAL paid over <strong class="text-tal-green font-black">$4.7 Billion</strong> in claims to Australian families. We show you the data so you know we pay out when it matters most.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8">
+                                <div class="flex-shrink-0 w-20 h-20 bg-tal-blue rounded-3xl flex items-center justify-center text-white shadow-lg">
+                                    <i data-lucide="map-pin" class="w-10 h-10"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-2xl font-black mb-3 text-tal-blue">Community Presence</h4>
+                                    <p class="text-slate-600 mb-8 leading-relaxed text-lg font-medium">Meet our advisors at events in <strong>Hurstville, Burwood, and Parramatta</strong>. We are active where you live and work.</p>
+                                    <a href="#" class="inline-flex items-center gap-3 bg-tal-green text-tal-blue px-8 py-4 rounded-2xl font-black hover:scale-105 transition-all shadow-xl text-base">
+                                        <i data-lucide="search" class="w-5 h-5"></i>
+                                        Search for financial adviser
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-tal-slate p-12 lg:p-16 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-tal-green opacity-20 -translate-y-10 translate-x-10 rounded-full"></div>
+                        <div class="flex items-center gap-5 mb-10">
+                            <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-tal-green border border-white/10">
+                                <i data-lucide="users-2" class="w-8 h-8"></i>
+                            </div>
+                            <span class="font-black text-xl tracking-tight uppercase">Community Confidence</span>
+                        </div>
+                        <div class="space-y-8">
+                             <div class="h-5 bg-white/10 rounded-full w-full"></div>
+                             <div class="h-5 bg-white/10 rounded-full w-5/6"></div>
+                             <div class="h-5 bg-white/10 rounded-full w-4/6"></div>
+                             <p class="text-xl text-white/80 font-bold leading-relaxed">Join over <strong>100,000</strong> small business owners who trust TAL for their Life Insurance needs across Australia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Secure your journey today -->
+        <section class="py-32 bg-tal-green text-tal-blue text-center relative overflow-hidden">
+            <div class="max-w-5xl mx-auto px-4 relative z-10">
+                <h2 class="text-5xl lg:text-6xl font-black mb-8">Secure Your Journey Today</h2>
+                <p class="text-2xl text-tal-blue/70 mb-16 font-bold max-w-2xl mx-auto">Don't let what you've built be left to chance. Take the first step with SIP.</p>
+                <div class="grid sm:grid-cols-2 gap-8 text-left">
+                    <a href="https://coverbuilder.tal.com.au/#/" target="_blank" class="group flex flex-col gap-6 bg-white text-tal-blue p-10 rounded-[2.5rem] hover:scale-[1.03] transition-all shadow-2xl">
+                        <div class="w-20 h-20 bg-tal-slate rounded-3xl flex items-center justify-center group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="calculator" class="w-10 h-10 text-tal-green"></i>
+                        </div>
+                        <div>
+                            <p class="font-black text-3xl mb-2 tracking-tighter">Get a Quote</p>
+                            <p class="text-base text-slate-500 font-bold">Beginner-friendly 3-minute tool</p>
+                        </div>
+                    </a>
+                    <a href="#" class="group flex flex-col gap-6 bg-tal-blue text-white p-10 rounded-[2.5rem] hover:scale-[1.03] transition-all shadow-2xl">
+                        <div class="w-20 h-20 bg-tal-green rounded-3xl flex items-center justify-center shadow-lg">
+                            <i data-lucide="users-round" class="w-10 h-10 text-tal-blue"></i>
+                        </div>
+                        <div>
+                            <p class="font-black text-3xl mb-2 tracking-tighter text-tal-green">Find an Advisor</p>
+                            <p class="text-base text-white/60 font-bold">Connect with a multicultural specialist</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-tal-blue text-slate-400 py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-16 mb-16">
+                <div class="max-w-xs">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-tal-green rounded flex items-center justify-center font-black text-base text-tal-blue italic">TAL</div>
+                        <span class="text-xl font-bold text-white tracking-tight uppercase">Settling In, Protected</span>
+                    </div>
+                    <p class="text-sm font-medium leading-relaxed opacity-60">Providing culturally respectful <strong>Life Insurance</strong> solutions for Australia's diverse small business communities.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                    <div>
+                        <h5 class="text-tal-green font-black mb-6 text-xs uppercase tracking-widest">Support</h5>
+                        <ul class="space-y-4 text-sm font-bold">
+                            <li><a href="https://www.tal.com.au/contact-us" class="hover:text-white transition-colors">Contact Us</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Financial Services Guide</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Find an Advisor</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-tal-green font-black mb-6 text-xs uppercase tracking-widest">Legal</h5>
+                        <ul class="space-y-4 text-sm font-bold">
+                            <li><a href="https://www.tal.com.au/privacy-policy" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Product Disclosure Statement (PDS)</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Target Market Determinations</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="text-tal-green font-black mb-6 text-xs uppercase tracking-widest">Connect</h5>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-tal-green hover:text-tal-blue transition-all border border-white/5"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-tal-green hover:text-tal-blue transition-all border border-white/5"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                            <a href="#" class="w-10 h-10 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-tal-green hover:text-tal-blue transition-all border border-white/5"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-6 text-[10px] uppercase font-black tracking-widest">
+                <p>&copy; 2026 TAL Services Limited. All rights reserved. ABN 60 076 100 724.</p>
+                <p class="text-tal-green">Designed for Multicultural Australia by the Graduate Innovation Team.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        document.querySelectorAll('.group-hover\\:block a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const lang = link.textContent.split('(')[0].trim();
+                document.querySelector('#langButton span').textContent = lang;
+            });
+        });
+    </script>
+</body>
+</html>
